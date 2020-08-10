@@ -150,7 +150,6 @@
 		229B748E1DE402A9008BB0D0 /* ChatViewPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B747C1DE402A8008BB0D0 /* ChatViewPreviewCell.m */; };
 		229B74911DE402A9008BB0D0 /* ChatViewTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B74821DE402A8008BB0D0 /* ChatViewTextCell.m */; };
 		229B74931DE402A9008BB0D0 /* ChatViewVoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229B74861DE402A8008BB0D0 /* ChatViewVoiceCell.m */; };
-		229B74951DE4132F008BB0D0 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 229B74941DE4132F008BB0D0 /* AppConfig.plist */; };
 		229B763D1DE415C0008BB0D0 /* AppConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 229B74971DE415BF008BB0D0 /* AppConfig.plist */; };
 		229B76461DE415C0008BB0D0 /* add_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 229B74A21DE415BF008BB0D0 /* add_icon@2x.png */; };
 		229B76471DE415C0008BB0D0 /* add_icon_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 229B74A31DE415BF008BB0D0 /* add_icon_on@2x.png */; };
@@ -884,7 +883,6 @@
 		22E9C6281DE2FC32006B7800 /* YTX_iOS_IM_SDK_v5.3.0r1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C5F81DE2FC32006B7800 /* YTX_iOS_IM_SDK_v5.3.0r1.a */; };
 		22E9C62A1DE2FD22006B7800 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C6291DE2FD22006B7800 /* libresolv.9.tbd */; };
 		22E9C62C1DE2FD32006B7800 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C62B1DE2FD32006B7800 /* libicucore.tbd */; };
-		22E9C62E1DE2FD3D006B7800 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C62D1DE2FD3D006B7800 /* libstdc++.6.0.9.tbd */; };
 		22E9C6301DE2FD4A006B7800 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C62F1DE2FD4A006B7800 /* MediaPlayer.framework */; };
 		22E9C6321DE2FD51006B7800 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C6311DE2FD51006B7800 /* CFNetwork.framework */; };
 		22E9C6341DE2FD5E006B7800 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E9C6331DE2FD5E006B7800 /* AudioToolbox.framework */; };
@@ -1087,7 +1085,6 @@
 		22F393DD1DAF64C70070114F /* GPUImageTextureOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F392DF1DAF64C70070114F /* GPUImageTextureOutput.m */; };
 		22F393DE1DAF64C70070114F /* GPUImageUIElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F392E11DAF64C70070114F /* GPUImageUIElement.m */; };
 		22F393DF1DAF64C70070114F /* GPUImageVideoCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F392E31DAF64C70070114F /* GPUImageVideoCamera.m */; };
-		22F3940F1DAF64C70070114F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F393171DAF64C70070114F /* Info.plist */; };
 		22F394101DAF64C70070114F /* GPUImageContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3931B1DAF64C70070114F /* GPUImageContext.m */; };
 		22F394111DAF64C70070114F /* GPUImageMovieWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3931D1DAF64C70070114F /* GPUImageMovieWriter.m */; };
 		22F394121DAF64C70070114F /* GPUImagePicture+TextureSubimage.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F3931F1DAF64C70070114F /* GPUImagePicture+TextureSubimage.m */; };
@@ -1373,7 +1370,6 @@
 		229B74821DE402A8008BB0D0 /* ChatViewTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewTextCell.m; sourceTree = "<group>"; };
 		229B74851DE402A8008BB0D0 /* ChatViewVoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewVoiceCell.h; sourceTree = "<group>"; };
 		229B74861DE402A8008BB0D0 /* ChatViewVoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewVoiceCell.m; sourceTree = "<group>"; };
-		229B74941DE4132F008BB0D0 /* AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = AppConfig.plist; sourceTree = "<group>"; };
 		229B74971DE415BF008BB0D0 /* AppConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = AppConfig.plist; sourceTree = "<group>"; };
 		229B74A21DE415BF008BB0D0 /* add_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_icon@2x.png"; sourceTree = "<group>"; };
 		229B74A31DE415BF008BB0D0 /* add_icon_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_icon_on@2x.png"; sourceTree = "<group>"; };
@@ -2482,7 +2478,6 @@
 		22E9C6261DE2FC32006B7800 /* VoipCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoipCall.h; sourceTree = "<group>"; };
 		22E9C6291DE2FD22006B7800 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 		22E9C62B1DE2FD32006B7800 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		22E9C62D1DE2FD3D006B7800 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		22E9C62F1DE2FD4A006B7800 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		22E9C6311DE2FD51006B7800 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		22E9C6331DE2FD5E006B7800 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -2884,7 +2879,6 @@
 		22F392E21DAF64C70070114F /* GPUImageVideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageVideoCamera.h; sourceTree = "<group>"; };
 		22F392E31DAF64C70070114F /* GPUImageVideoCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageVideoCamera.m; sourceTree = "<group>"; };
 		22F393161DAF64C70070114F /* GPUImageFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageFramework.h; sourceTree = "<group>"; };
-		22F393171DAF64C70070114F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F393181DAF64C70070114F /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		22F393191DAF64C70070114F /* GPUImage-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPUImage-Prefix.pch"; sourceTree = "<group>"; };
 		22F3931A1DAF64C70070114F /* GPUImageContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageContext.h; sourceTree = "<group>"; };
@@ -2926,7 +2920,6 @@
 				22E9C6341DE2FD5E006B7800 /* AudioToolbox.framework in Frameworks */,
 				22E9C6321DE2FD51006B7800 /* CFNetwork.framework in Frameworks */,
 				22E9C6301DE2FD4A006B7800 /* MediaPlayer.framework in Frameworks */,
-				22E9C62E1DE2FD3D006B7800 /* libstdc++.6.0.9.tbd in Frameworks */,
 				22DC409C1E1A096E008BB114 /* TencentOpenAPI.framework in Frameworks */,
 				22DC409F1E1A096E008BB114 /* libWeiboSDK.a in Frameworks */,
 				22A54E3A1E03996D00F51888 /* libcrypto.a in Frameworks */,
@@ -2977,7 +2970,6 @@
 				22E9C6331DE2FD5E006B7800 /* AudioToolbox.framework */,
 				22E9C6311DE2FD51006B7800 /* CFNetwork.framework */,
 				22E9C62F1DE2FD4A006B7800 /* MediaPlayer.framework */,
-				22E9C62D1DE2FD3D006B7800 /* libstdc++.6.0.9.tbd */,
 				22E9C62B1DE2FD32006B7800 /* libicucore.tbd */,
 				22E9C6291DE2FD22006B7800 /* libresolv.9.tbd */,
 				22334C6A1DABC06800CC2058 /* libz.1.2.8.tbd */,
@@ -5154,7 +5146,6 @@
 			isa = PBXGroup;
 			children = (
 				229B74961DE415BF008BB0D0 /* Resources */,
-				229B74941DE4132F008BB0D0 /* AppConfig.plist */,
 				229B74401DE3F5AD008BB0D0 /* Model */,
 				229B74321DE3F24A008BB0D0 /* Category */,
 				229B73F01DE3F233008BB0D0 /* Tool */,
@@ -5726,7 +5717,6 @@
 			isa = PBXGroup;
 			children = (
 				22F393161DAF64C70070114F /* GPUImageFramework.h */,
-				22F393171DAF64C70070114F /* Info.plist */,
 				22F393181DAF64C70070114F /* module.modulemap */,
 			);
 			path = Framework;
@@ -5839,6 +5829,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -5888,7 +5879,6 @@
 				229B76651DE415C0008BB0D0 /* dialogue_redacket_icon_on@2x.png in Resources */,
 				229B76C01DE415C0008BB0D0 /* add_contact.png in Resources */,
 				229DD12B1DBDFE2500AD83D2 /* record_deletesure_normal.png in Resources */,
-				229B74951DE4132F008BB0D0 /* AppConfig.plist in Resources */,
 				229B76ED1DE415C0008BB0D0 /* videoConf03_on@2x.png in Resources */,
 				229B76AD1DE415C0008BB0D0 /* dialog_on@2x.png in Resources */,
 				229B76511DE415C0008BB0D0 /* chat_sender_bg@2x.png in Resources */,
@@ -5988,7 +5978,6 @@
 				229B77231DE415C0008BB0D0 /* videoConf54_on@2x.png in Resources */,
 				229B77B61DE415C1008BB0D0 /* mute_icon.png in Resources */,
 				229B768B1DE415C0008BB0D0 /* UN_ReadMsg.png in Resources */,
-				22F3940F1DAF64C70070114F /* Info.plist in Resources */,
 				229B76731DE415C0008BB0D0 /* input_box_on@2x.png in Resources */,
 				229B765A1DE415C0008BB0D0 /* chatView_location_map@3x.png in Resources */,
 				229DD12D1DBDFE2500AD83D2 /* record_flashlight_disable.png in Resources */,
@@ -7147,7 +7136,7 @@
 					"$(PROJECT_DIR)/SURE/Framework/UMSocial/UMSocialUI",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/longlong/Desktop/SURE/SURE/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "${SRCROOT}/SURE/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",
@@ -7216,7 +7205,7 @@
 					"$(PROJECT_DIR)/SURE/Framework/UMSocial/UMSocialUI",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/longlong/Desktop/SURE/SURE/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "${SRCROOT}/SURE/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(inherited)",

@@ -20,10 +20,9 @@
 #define UserDefault_UserDataVer     [NSString stringWithFormat:@"%@_UserDataVer",self.userName]
 #define UserDefault_UserSign   [NSString stringWithFormat:@"%@_UserSign",self.userName]
 //应用信息配置文件
-#define AppConfigPlist @"AppConfig.plist"
 
-#define AppConfig_AppKey @"AppKey"
-#define AppConfig_AppToken @"AppToken"
+#define AppConfig_AppKey @"8a216da856ff04b2015702da4f4202b3"
+#define AppConfig_AppToken @"10552a60c3b3dc1e9eeb9c3af383ba28"
 
 
 #define DefaultAppKey @"8a216da856ff04b2015702da4f4202b3"
@@ -67,11 +66,11 @@
 -(void)readAppConfig {
     
     //应用资源文件夹应用信息文件路径
-    NSString *appResource = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:AppConfigPlist];
+    NSString *appResource = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@""];
 
     //应用资源文件在设备上的路径
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *appDocument = [[paths objectAtIndex:0] stringByAppendingPathComponent:AppConfigPlist];
+    NSString *appDocument = [[paths objectAtIndex:0] stringByAppendingPathComponent:@""];
     
     BOOL success = [[NSFileManager defaultManager] fileExistsAtPath:appDocument];
     if (!success){
@@ -265,11 +264,11 @@
 -(void)writeAppConfig {
     
     //应用资源文件夹应用信息文件路径
-    NSString *appResource = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:AppConfigPlist];
+    NSString *appResource = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"AppConfigPlist"];
     
     //应用资源文件在设备上的路径
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *appDocument = [[paths objectAtIndex:0] stringByAppendingPathComponent:AppConfigPlist];
+    NSString *appDocument = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"AppConfigPlist"];
     
     BOOL success = [[NSFileManager defaultManager] fileExistsAtPath:appDocument];
     if (!success){
