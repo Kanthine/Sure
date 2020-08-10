@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApplyWithdrawVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obi-V6-yKV">
+                    <rect key="frame" x="10" y="30" width="355" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提现金额(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixu-Ne-CYd">
+                            <rect key="frame" x="10" y="20" width="98" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入提现金额" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zU-Vs-Qcz">
+                            <rect key="frame" x="10" y="71" width="335" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="nIZ-Bc-Tyn"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可提现金额：3.3元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddB-TD-aRF">
+                            <rect key="frame" x="10" y="131" width="120.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opH-RU-Mdw">
+                            <rect key="frame" x="10" y="103.5" width="330" height="1"/>
+                            <color key="backgroundColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="DR8-Hx-1uN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ddB-TD-aRF" firstAttribute="leading" secondItem="Obi-V6-yKV" secondAttribute="leading" constant="10" id="68P-Kx-OzA"/>
+                        <constraint firstAttribute="height" constant="200" id="8cW-RG-JCC"/>
+                        <constraint firstItem="ddB-TD-aRF" firstAttribute="top" secondItem="8zU-Vs-Qcz" secondAttribute="bottom" constant="20" id="EJB-ta-4Dm"/>
+                        <constraint firstAttribute="trailing" secondItem="opH-RU-Mdw" secondAttribute="trailing" constant="15" id="EJY-pm-cgD"/>
+                        <constraint firstItem="ixu-Ne-CYd" firstAttribute="top" secondItem="Obi-V6-yKV" secondAttribute="top" constant="20" id="IQo-8q-H40"/>
+                        <constraint firstItem="opH-RU-Mdw" firstAttribute="leading" secondItem="Obi-V6-yKV" secondAttribute="leading" constant="10" id="N1k-Hl-UZH"/>
+                        <constraint firstItem="8zU-Vs-Qcz" firstAttribute="leading" secondItem="Obi-V6-yKV" secondAttribute="leading" constant="10" id="ORe-wB-yMZ"/>
+                        <constraint firstAttribute="trailing" secondItem="8zU-Vs-Qcz" secondAttribute="trailing" constant="10" id="Rft-2B-BJH"/>
+                        <constraint firstItem="opH-RU-Mdw" firstAttribute="centerY" secondItem="8zU-Vs-Qcz" secondAttribute="centerY" constant="13" id="SKx-AV-8ni"/>
+                        <constraint firstItem="8zU-Vs-Qcz" firstAttribute="top" secondItem="ixu-Ne-CYd" secondAttribute="bottom" constant="30" id="wuT-JI-Hpd"/>
+                        <constraint firstItem="ixu-Ne-CYd" firstAttribute="leading" secondItem="Obi-V6-yKV" secondAttribute="leading" constant="10" id="y6H-uo-aOP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBe-TO-bWI">
+                    <rect key="frame" x="20" y="260" width="335" height="50"/>
+                    <color key="backgroundColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="cBe-TO-bWI" secondAttribute="height" multiplier="67:10" id="TId-En-BKw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="申请提现"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Obi-V6-yKV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="DOe-Sw-Kcz"/>
+                <constraint firstItem="cBe-TO-bWI" firstAttribute="top" secondItem="Obi-V6-yKV" secondAttribute="bottom" constant="30" id="JJi-5j-u83"/>
+                <constraint firstAttribute="trailing" secondItem="Obi-V6-yKV" secondAttribute="trailing" constant="10" id="PGm-Tc-2aO"/>
+                <constraint firstItem="Obi-V6-yKV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="q0c-j7-P1e"/>
+                <constraint firstAttribute="trailing" secondItem="cBe-TO-bWI" secondAttribute="trailing" constant="20" id="sXW-ED-6G6"/>
+                <constraint firstItem="cBe-TO-bWI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="vcu-Nd-MO8"/>
+            </constraints>
+            <point key="canvasLocation" x="44.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

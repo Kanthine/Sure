@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressManagerVC">
+            <connections>
+                <outlet property="_tableView" destination="wZi-Ao-Zh2" id="oJf-Ef-GsN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bio-Wx-vEK">
+                    <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                    <color key="backgroundColor" red="1" green="0.16750268469999999" blue="0.1620902051" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="r88-3G-xHD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="添加新地址"/>
+                    <connections>
+                        <action selector="addNewShippingAddressButtonClick:" destination="-1" eventType="touchUpInside" id="9uO-od-uip"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wZi-Ao-Zh2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8jq-zc-vIF"/>
+                        <outlet property="delegate" destination="-1" id="qvP-IT-5ly"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wZi-Ao-Zh2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VbQ-mQ-sdg"/>
+                <constraint firstAttribute="trailing" secondItem="wZi-Ao-Zh2" secondAttribute="trailing" id="Wvn-Rk-aZX"/>
+                <constraint firstItem="Bio-Wx-vEK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="byf-8K-W3E"/>
+                <constraint firstAttribute="bottom" secondItem="Bio-Wx-vEK" secondAttribute="bottom" id="go4-0u-Pnx"/>
+                <constraint firstAttribute="trailing" secondItem="Bio-Wx-vEK" secondAttribute="trailing" id="lTp-hW-DS1"/>
+                <constraint firstItem="wZi-Ao-Zh2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nWr-9L-yT9"/>
+                <constraint firstItem="Bio-Wx-vEK" firstAttribute="top" secondItem="wZi-Ao-Zh2" secondAttribute="bottom" id="wtl-4d-KaU"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

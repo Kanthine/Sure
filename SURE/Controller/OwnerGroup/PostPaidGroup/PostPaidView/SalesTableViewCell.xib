@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="SalesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ownerHeader" translatesAutoresizingMaskIntoConstraints="NO" id="ROc-Rx-okY">
+                        <rect key="frame" x="10" y="10" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ROc-Rx-okY" secondAttribute="height" multiplier="1:1" id="8EF-fW-gjs"/>
+                            <constraint firstAttribute="width" constant="45" id="9Mw-M3-Hk6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="23"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ni的名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5E-MW-dDr">
+                        <rect key="frame" x="63" y="15" width="54.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID：99873452139" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrl-5e-En6">
+                        <rect key="frame" x="63" y="37" width="112.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已付款" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyy-gK-ZdI">
+                        <rect key="frame" x="267" y="15" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="56" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3U-u1-HfP">
+                        <rect key="frame" x="292.5" y="36.5" width="17.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.12156862745098039" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ROc-Rx-okY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GmK-EP-8Dv"/>
+                    <constraint firstItem="k5E-MW-dDr" firstAttribute="leading" secondItem="ROc-Rx-okY" secondAttribute="trailing" constant="8" id="Pf7-yD-v0a"/>
+                    <constraint firstItem="k5E-MW-dDr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="XjZ-Jf-W81"/>
+                    <constraint firstItem="ROc-Rx-okY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Ywd-Gb-Y16"/>
+                    <constraint firstItem="Yyy-gK-ZdI" firstAttribute="centerY" secondItem="k5E-MW-dDr" secondAttribute="centerY" id="aQJ-tZ-jS2"/>
+                    <constraint firstAttribute="trailing" secondItem="Yyy-gK-ZdI" secondAttribute="trailing" constant="10" id="aSf-Qe-hW5"/>
+                    <constraint firstAttribute="trailing" secondItem="v3U-u1-HfP" secondAttribute="trailing" constant="10" id="kVD-d5-f1o"/>
+                    <constraint firstItem="Jrl-5e-En6" firstAttribute="leading" secondItem="ROc-Rx-okY" secondAttribute="trailing" constant="8" id="nGY-68-K4V"/>
+                    <constraint firstItem="Jrl-5e-En6" firstAttribute="top" secondItem="k5E-MW-dDr" secondAttribute="bottom" constant="5" id="pVy-bW-prX"/>
+                    <constraint firstItem="v3U-u1-HfP" firstAttribute="centerY" secondItem="Jrl-5e-En6" secondAttribute="centerY" id="sZZ-66-ncH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headerImageView" destination="ROc-Rx-okY" id="itl-Qq-6s5"/>
+                <outlet property="idLable" destination="Jrl-5e-En6" id="Wbd-D5-Mzi"/>
+                <outlet property="nameLable" destination="k5E-MW-dDr" id="eUv-Sn-qZM"/>
+                <outlet property="priceLable" destination="v3U-u1-HfP" id="5FK-ff-oR5"/>
+                <outlet property="statusLable" destination="Yyy-gK-ZdI" id="aEf-yI-rj8"/>
+            </connections>
+            <point key="canvasLocation" x="-193" y="-13"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ownerHeader" width="320" height="320"/>
+    </resources>
+</document>

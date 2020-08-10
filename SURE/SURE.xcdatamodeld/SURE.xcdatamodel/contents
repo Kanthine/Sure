@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="15G1108" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CollectProductCoreModel" representedClassName="CollectProductCoreModel" syncable="YES" codeGenerationType="class">
+        <attribute name="collectTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="month" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ShippingAdress" representedClassName="ShippingAdress" syncable="YES" codeGenerationType="class">
+        <attribute name="address_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="addressString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cityID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="district" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="districtID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isDefaultAdress" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nameString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phoneString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="province" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provinceCityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="provinceID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ShippingAdress" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="CollectProductCoreModel" positionX="-63" positionY="81" width="128" height="135"/>
+    </elements>
+</model>

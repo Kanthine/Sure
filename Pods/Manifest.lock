@@ -1,0 +1,73 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Bugtags (1.3.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HappyDNS (0.3.10)
+  - HPGrowingTextView (1.1)
+  - hpple (0.2.0)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
+  - Qiniu (7.1.2):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - Reachability (3.2)
+  - SDWebImage (4.0.0-beta2):
+    - SDWebImage/Core (= 4.0.0-beta2)
+  - SDWebImage/Core (4.0.0-beta2)
+  - SKTagView (0.9.2)
+  - UITableView+FDTemplateLayoutCell (1.5.beta)
+  - YLGIFImage (0.11)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Bugtags (~> 1.3.1)
+  - FMDB (~> 2.6.2)
+  - HPGrowingTextView (~> 1.1)
+  - hpple (~> 0.2.0)
+  - Masonry (~> 1.0.2)
+  - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.12)
+  - Qiniu (~> 7.1.2)
+  - Reachability (~> 3.2)
+  - SDWebImage (~> 4.0.0-beta2)
+  - SKTagView (~> 0.9.2)
+  - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+  - YLGIFImage (~> 0.11)
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Bugtags: a2f1671df9dacfdfd53fa59d3e6ffe7575bb2212
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  Qiniu: d57cb922b5c31f0d1cfe2c8fea3cf83997cdcf62
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
+  SKTagView: 59cdadcd16e4a09300746ad1811a72371e1327f7
+  UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
+  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
+
+PODFILE CHECKSUM: a92b88ba330bfb702de076c13618ab12d7654da5
+
+COCOAPODS: 1.1.0.rc.2

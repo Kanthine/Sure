@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bfZ-l1-rTs" customClass="ShopCarTableViewHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQQ-DE-t7A">
+                    <rect key="frame" x="0.0" y="0.0" width="33" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="33" id="a2d-Wo-EeF"/>
+                    </constraints>
+                    <state key="normal" image="shoppingCar_Circle"/>
+                    <state key="selected" image="shoppingCar_Circle_Selected"/>
+                    <connections>
+                        <action selector="brandSelectedButtonClick:" destination="bfZ-l1-rTs" eventType="touchUpInside" id="WRQ-e7-D4n"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANZHANG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwN-Kl-8xG">
+                    <rect key="frame" x="63" y="16" width="73.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ownerHeader" translatesAutoresizingMaskIntoConstraints="NO" id="UF9-iO-Obv">
+                    <rect key="frame" x="33" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UF9-iO-Obv" secondAttribute="height" multiplier="1:1" id="3XM-pO-T6N"/>
+                        <constraint firstAttribute="width" constant="20" id="94q-9F-P9x"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_RightButton" translatesAutoresizingMaskIntoConstraints="NO" id="pRe-hR-dqW">
+                    <rect key="frame" x="146.5" y="17.5" width="9" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Y8q-OC-N0K"/>
+                        <constraint firstAttribute="width" constant="9" id="xYk-IE-lye"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aO5-rK-aCb">
+                    <rect key="frame" x="33" y="0.0" width="282" height="50"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-Ea-fyw">
+                    <rect key="frame" x="325" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9QA-Ea-fyw" secondAttribute="height" multiplier="1:1" id="Ilj-If-dJn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="编辑">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="完成"/>
+                    <connections>
+                        <action selector="brandEditButtonClick:" destination="bfZ-l1-rTs" eventType="touchUpInside" id="XvJ-PX-8Et"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smo-iZ-EPU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qP1-ID-VB7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="smo-iZ-EPU" firstAttribute="leading" secondItem="bfZ-l1-rTs" secondAttribute="leading" id="2rY-1p-s1N"/>
+                <constraint firstItem="UQQ-DE-t7A" firstAttribute="top" secondItem="bfZ-l1-rTs" secondAttribute="top" id="5QK-kK-RHx"/>
+                <constraint firstItem="pRe-hR-dqW" firstAttribute="leading" secondItem="iwN-Kl-8xG" secondAttribute="trailing" constant="10" id="Gq3-KN-IGe"/>
+                <constraint firstItem="pRe-hR-dqW" firstAttribute="centerY" secondItem="bfZ-l1-rTs" secondAttribute="centerY" id="GtU-al-KTf"/>
+                <constraint firstAttribute="trailing" secondItem="aO5-rK-aCb" secondAttribute="trailing" constant="60" id="KIe-T4-eLV"/>
+                <constraint firstItem="aO5-rK-aCb" firstAttribute="top" secondItem="bfZ-l1-rTs" secondAttribute="top" id="MsH-Zf-HEe"/>
+                <constraint firstAttribute="trailing" secondItem="smo-iZ-EPU" secondAttribute="trailing" id="O0B-Ab-cd4"/>
+                <constraint firstAttribute="bottom" secondItem="aO5-rK-aCb" secondAttribute="bottom" id="Uuh-rf-C2h"/>
+                <constraint firstItem="UF9-iO-Obv" firstAttribute="centerY" secondItem="bfZ-l1-rTs" secondAttribute="centerY" id="Xk3-oD-AMf"/>
+                <constraint firstAttribute="trailing" secondItem="9QA-Ea-fyw" secondAttribute="trailing" id="apY-9L-FJH"/>
+                <constraint firstItem="9QA-Ea-fyw" firstAttribute="top" secondItem="bfZ-l1-rTs" secondAttribute="top" id="dbw-uo-g9H"/>
+                <constraint firstAttribute="bottom" secondItem="9QA-Ea-fyw" secondAttribute="bottom" id="gB2-3a-y3d"/>
+                <constraint firstAttribute="bottom" secondItem="UQQ-DE-t7A" secondAttribute="bottom" id="gmw-U7-y0k"/>
+                <constraint firstItem="iwN-Kl-8xG" firstAttribute="leading" secondItem="UF9-iO-Obv" secondAttribute="trailing" constant="10" id="h3l-WH-eeW"/>
+                <constraint firstItem="smo-iZ-EPU" firstAttribute="top" secondItem="bfZ-l1-rTs" secondAttribute="top" id="lYG-cb-ZE8"/>
+                <constraint firstItem="UQQ-DE-t7A" firstAttribute="leading" secondItem="bfZ-l1-rTs" secondAttribute="leading" id="nwM-Ae-6gP"/>
+                <constraint firstItem="UF9-iO-Obv" firstAttribute="leading" secondItem="UQQ-DE-t7A" secondAttribute="trailing" id="odF-yH-g9K"/>
+                <constraint firstItem="iwN-Kl-8xG" firstAttribute="centerY" secondItem="bfZ-l1-rTs" secondAttribute="centerY" id="pmi-Yi-vb8"/>
+                <constraint firstItem="aO5-rK-aCb" firstAttribute="leading" secondItem="UQQ-DE-t7A" secondAttribute="trailing" id="x1p-0m-KRK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="brandDetaileButton" destination="aO5-rK-aCb" id="VMe-9d-ffX"/>
+                <outlet property="brandEditButton" destination="9QA-Ea-fyw" id="0nX-k3-K3b"/>
+                <outlet property="brandLogoImageView" destination="UF9-iO-Obv" id="yAS-bX-6Sa"/>
+                <outlet property="brandNameLable" destination="iwN-Kl-8xG" id="C60-Nq-P3J"/>
+                <outlet property="leftButton" destination="UQQ-DE-t7A" id="sSO-BE-XHA"/>
+            </connections>
+            <point key="canvasLocation" x="-91.5" y="53"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_RightButton" width="5" height="10"/>
+        <image name="ownerHeader" width="320" height="320"/>
+        <image name="shoppingCar_Circle" width="20" height="20"/>
+        <image name="shoppingCar_Circle_Selected" width="20" height="20"/>
+    </resources>
+</document>

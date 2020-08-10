@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="WLF-Hf-FHe" customClass="LocationPickerSheetView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZC-BU-k7q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbA-wN-vJC">
+                            <rect key="frame" x="10" y="0.0" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="zFt-1m-AWy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-5P-HIp">
+                            <rect key="frame" x="305" y="0.0" width="60" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="01r-J8-99n"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Pci-iQ-LOe"/>
+                        <constraint firstItem="jhj-5P-HIp" firstAttribute="top" secondItem="JZC-BU-k7q" secondAttribute="top" id="Svx-ZW-O1e"/>
+                        <constraint firstItem="lbA-wN-vJC" firstAttribute="top" secondItem="JZC-BU-k7q" secondAttribute="top" id="V44-3B-mN9"/>
+                        <constraint firstAttribute="bottom" secondItem="jhj-5P-HIp" secondAttribute="bottom" id="VwE-wz-60P"/>
+                        <constraint firstAttribute="bottom" secondItem="lbA-wN-vJC" secondAttribute="bottom" id="czl-GL-58X"/>
+                        <constraint firstItem="lbA-wN-vJC" firstAttribute="leading" secondItem="JZC-BU-k7q" secondAttribute="leading" constant="10" id="t9Z-cC-Ax8"/>
+                        <constraint firstAttribute="trailing" secondItem="jhj-5P-HIp" secondAttribute="trailing" constant="10" id="wzP-T5-j0i"/>
+                    </constraints>
+                </view>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jip-ds-PUu">
+                    <rect key="frame" x="0.0" y="45" width="375" height="622"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jip-ds-PUu" secondAttribute="bottom" id="443-f6-CwY"/>
+                <constraint firstAttribute="trailing" secondItem="Jip-ds-PUu" secondAttribute="trailing" id="U98-CM-Yfz"/>
+                <constraint firstItem="JZC-BU-k7q" firstAttribute="top" secondItem="WLF-Hf-FHe" secondAttribute="top" id="Vir-mG-HUN"/>
+                <constraint firstAttribute="trailing" secondItem="JZC-BU-k7q" secondAttribute="trailing" id="baF-Wp-4CS"/>
+                <constraint firstItem="Jip-ds-PUu" firstAttribute="leading" secondItem="WLF-Hf-FHe" secondAttribute="leading" id="fVL-FR-tKu"/>
+                <constraint firstItem="JZC-BU-k7q" firstAttribute="leading" secondItem="WLF-Hf-FHe" secondAttribute="leading" id="gZB-fW-PAc"/>
+                <constraint firstItem="Jip-ds-PUu" firstAttribute="top" secondItem="JZC-BU-k7q" secondAttribute="bottom" id="wXb-3N-fQT"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelBtn" destination="lbA-wN-vJC" id="u71-fR-ZZ8"/>
+                <outlet property="pickerView" destination="Jip-ds-PUu" id="Zwz-Lx-YBy"/>
+                <outlet property="sureBtn" destination="jhj-5P-HIp" id="gO2-rw-xBb"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="15"/>
+        </view>
+    </objects>
+</document>

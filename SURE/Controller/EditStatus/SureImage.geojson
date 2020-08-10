@@ -1,0 +1,45 @@
+{
+    "imglist":
+[
+    {
+    "images": "FileImage.png"//图片
+    "tagArray":
+        [
+             {
+                 "lablename": "品牌1",
+                 "goodsid": "111",
+                 "supplierID": "1",
+                 "lat": "a"
+                 "lng": "a"
+             },
+             {
+                 "lablename": "品牌2",
+                 "goodsid": "222",
+                 "supplierID": "2",
+                 "lat": "b"
+                 "lng": "b"
+             },
+             {
+             "lablename": "品牌3",
+             "goodsid": "333",
+             "supplierID": "3",
+             "lat": "a"
+             "lng": "a"
+             }
+        ]
+    },
+ 
+     {
+         "images": "FileVideo.mp4"//视频
+         [
+              {
+                  "lablename": "品牌1",
+                  "goodsid": "111",
+                  "supplierID": "1",
+                  "lat": "a"
+                  "lng": "a"
+              }
+        ]
+     },
+]
+}

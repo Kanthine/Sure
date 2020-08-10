@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostStatusViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7J-tq-d3v">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvQ-kL-ovL">
+                            <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="llk-4f-jiB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnH-yr-CBp">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dnH-yr-CBp" secondAttribute="height" multiplier="1:1" id="pxu-Mm-E13"/>
+                            </constraints>
+                            <state key="normal" image="navBar_LeftButton"/>
+                            <connections>
+                                <action selector="goBackButtonclick:" destination="-1" eventType="touchUpInside" id="MSC-4m-KCQ"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布预览" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dx9-jN-Ic7">
+                            <rect key="frame" x="173" y="13" width="68" height="20"/>
+                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVX-hi-9st">
+                            <rect key="frame" x="329" y="8" width="75" height="30"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.79607843137254897" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="Z38-EN-uE1"/>
+                                <constraint firstAttribute="height" constant="30" id="jcl-s6-sQI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="发布"/>
+                            <connections>
+                                <action selector="postStatusButtonClick:" destination="-1" eventType="touchUpInside" id="KRY-9x-RsY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EvQ-kL-ovL" secondAttribute="trailing" id="3bi-4F-9iZ"/>
+                        <constraint firstItem="dnH-yr-CBp" firstAttribute="leading" secondItem="b7J-tq-d3v" secondAttribute="leading" id="9Ue-Qe-uM3"/>
+                        <constraint firstItem="EvQ-kL-ovL" firstAttribute="top" secondItem="dnH-yr-CBp" secondAttribute="bottom" id="ANI-zm-JiS"/>
+                        <constraint firstItem="dx9-jN-Ic7" firstAttribute="centerX" secondItem="b7J-tq-d3v" secondAttribute="centerX" id="DDx-g8-Xgt"/>
+                        <constraint firstItem="dnH-yr-CBp" firstAttribute="top" secondItem="b7J-tq-d3v" secondAttribute="top" id="DaC-jm-UYS"/>
+                        <constraint firstItem="AVX-hi-9st" firstAttribute="centerY" secondItem="b7J-tq-d3v" secondAttribute="centerY" id="MGi-79-qpk"/>
+                        <constraint firstItem="dx9-jN-Ic7" firstAttribute="centerY" secondItem="b7J-tq-d3v" secondAttribute="centerY" id="TiI-5Z-aK3"/>
+                        <constraint firstAttribute="bottom" secondItem="EvQ-kL-ovL" secondAttribute="bottom" id="Whj-4a-LYx"/>
+                        <constraint firstAttribute="height" constant="45" id="dlE-kH-Pyo"/>
+                        <constraint firstAttribute="trailing" secondItem="AVX-hi-9st" secondAttribute="trailing" constant="10" id="hO6-gi-EKD"/>
+                        <constraint firstItem="EvQ-kL-ovL" firstAttribute="leading" secondItem="b7J-tq-d3v" secondAttribute="leading" id="jd6-vP-a57"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b7J-tq-d3v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HXA-c3-jRP"/>
+                <constraint firstAttribute="trailing" secondItem="b7J-tq-d3v" secondAttribute="trailing" id="fvS-Us-jJT"/>
+                <constraint firstItem="b7J-tq-d3v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mbm-X4-lWU"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBar_LeftButton" width="10" height="18"/>
+    </resources>
+</document>

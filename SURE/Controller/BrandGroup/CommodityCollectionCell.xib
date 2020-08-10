@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CommodityCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="219" height="340"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="219" height="340"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A0K-94-tlj">
+                        <rect key="frame" x="0.0" y="0.0" width="219" height="219"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="A0K-94-tlj" secondAttribute="height" multiplier="1:1" id="kfS-yW-6cV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ORIGAL X YOUTH" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM3-8v-geG">
+                        <rect key="frame" x="5" y="224" width="209" height="80.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="￥358" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-B6-nF9">
+                        <rect key="frame" x="5" y="309.5" width="48.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.55294117647058827" green="0.12156862745098039" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo1-C2-KKU">
+                        <rect key="frame" x="189" y="309.5" width="25" height="23"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="shopCar_Gray"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mo1-C2-KKU" firstAttribute="top" secondItem="bM3-8v-geG" secondAttribute="bottom" constant="5" id="0aa-yZ-cog"/>
+                <constraint firstAttribute="trailing" secondItem="bM3-8v-geG" secondAttribute="trailing" constant="5" id="5Ri-vs-b5n"/>
+                <constraint firstItem="QhD-B6-nF9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="8YW-qc-wnA"/>
+                <constraint firstItem="bM3-8v-geG" firstAttribute="top" secondItem="A0K-94-tlj" secondAttribute="bottom" constant="5" id="CuO-qv-zds"/>
+                <constraint firstAttribute="trailing" secondItem="A0K-94-tlj" secondAttribute="trailing" id="JEb-zX-ee9"/>
+                <constraint firstItem="A0K-94-tlj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lki-3c-nrN"/>
+                <constraint firstItem="A0K-94-tlj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UBV-YW-k2u"/>
+                <constraint firstItem="QhD-B6-nF9" firstAttribute="top" secondItem="bM3-8v-geG" secondAttribute="bottom" constant="5" id="USA-MF-NRW"/>
+                <constraint firstItem="bM3-8v-geG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Zj0-7x-b2k"/>
+                <constraint firstAttribute="bottom" secondItem="QhD-B6-nF9" secondAttribute="bottom" constant="10" id="u7b-5C-ND1"/>
+                <constraint firstAttribute="trailing" secondItem="mo1-C2-KKU" secondAttribute="trailing" constant="5" id="xdm-5N-G3a"/>
+            </constraints>
+            <size key="customSize" width="219" height="340"/>
+            <connections>
+                <outlet property="addCarButton" destination="mo1-C2-KKU" id="tU9-2a-Q4z"/>
+                <outlet property="productImageView" destination="A0K-94-tlj" id="KuX-De-Vet"/>
+                <outlet property="productNameLable" destination="bM3-8v-geG" id="EKJ-3g-ozu"/>
+                <outlet property="productPriceLable" destination="QhD-B6-nF9" id="0jb-9h-rPI"/>
+            </connections>
+            <point key="canvasLocation" x="118.5" y="199"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shopCar_Gray" width="25" height="23"/>
+    </resources>
+</document>

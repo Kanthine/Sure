@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmOrderVC">
+            <connections>
+                <outlet property="_submitOrderButton" destination="onz-Oy-0Yh" id="Q5c-71-TGl"/>
+                <outlet property="_tableView" destination="uis-aS-aTJ" id="a2y-Pg-QK2"/>
+                <outlet property="_totalPriceLable" destination="gpu-OC-nF9" id="8Ec-f6-sHB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="uis-aS-aTJ" customClass="ShutTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Zgg-Gi-2Pj"/>
+                        <outlet property="delegate" destination="-1" id="EYh-yQ-o9W"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kph-a5-bWN">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onz-Oy-0Yh">
+                            <rect key="frame" x="285" y="10" width="80" height="30"/>
+                            <color key="backgroundColor" red="0.55686274509803924" green="0.12156862745098039" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="5MM-Eg-4mL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="提交订单"/>
+                            <state key="selected">
+                                <color key="titleColor" red="0.55686274509803924" green="0.12156862745098039" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="submitOrderButtonClick:" destination="-1" eventType="touchUpInside" id="PmM-Nx-jMs"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合计：￥300.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-OC-nF9">
+                            <rect key="frame" x="161" y="16" width="104" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-hd-nbc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="JL5-fr-PrP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="onz-Oy-0Yh" secondAttribute="trailing" constant="10" id="2tk-GP-WVM"/>
+                        <constraint firstItem="hKe-hd-nbc" firstAttribute="leading" secondItem="Kph-a5-bWN" secondAttribute="leading" id="RLS-S9-uPi"/>
+                        <constraint firstAttribute="trailing" secondItem="hKe-hd-nbc" secondAttribute="trailing" id="Zmg-UF-gbX"/>
+                        <constraint firstItem="gpu-OC-nF9" firstAttribute="centerY" secondItem="Kph-a5-bWN" secondAttribute="centerY" id="cGe-IR-Tjj"/>
+                        <constraint firstAttribute="height" constant="50" id="dcY-tD-izn"/>
+                        <constraint firstAttribute="bottom" secondItem="onz-Oy-0Yh" secondAttribute="bottom" constant="10" id="eqT-Y8-HNh"/>
+                        <constraint firstItem="onz-Oy-0Yh" firstAttribute="leading" secondItem="gpu-OC-nF9" secondAttribute="trailing" constant="20" id="rmu-L2-BNb"/>
+                        <constraint firstItem="hKe-hd-nbc" firstAttribute="top" secondItem="Kph-a5-bWN" secondAttribute="top" id="tGV-9r-Rji"/>
+                        <constraint firstItem="onz-Oy-0Yh" firstAttribute="top" secondItem="Kph-a5-bWN" secondAttribute="top" constant="10" id="zI2-VW-UgS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Kph-a5-bWN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Kg-pY-sIc"/>
+                <constraint firstAttribute="trailing" secondItem="Kph-a5-bWN" secondAttribute="trailing" id="aNA-na-alk"/>
+                <constraint firstAttribute="bottom" secondItem="Kph-a5-bWN" secondAttribute="bottom" id="eeX-5F-PTp"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

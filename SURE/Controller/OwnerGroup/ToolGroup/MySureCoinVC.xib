@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MySureCoinVC">
+            <connections>
+                <outlet property="_lookDetaileButton" destination="85i-7V-BFu" id="vYS-au-cq1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owner_SureCoinBack" translatesAutoresizingMaskIntoConstraints="NO" id="LM2-52-aqb">
+                    <rect key="frame" x="112" y="25" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="2t5-nE-qaq"/>
+                        <constraint firstAttribute="width" secondItem="LM2-52-aqb" secondAttribute="height" multiplier="1:1" id="MCd-VO-EDl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="128" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1t5-BG-SQd">
+                    <rect key="frame" x="166.5" y="85" width="41.5" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个SURE币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbD-6m-79J">
+                    <rect key="frame" x="152.5" y="190" width="69.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85i-7V-BFu">
+                    <rect key="frame" x="147.5" y="228" width="80" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Kpw-In-oIn"/>
+                        <constraint firstAttribute="height" constant="36" id="ZBJ-Lp-iyL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <state key="normal" title="查看明细">
+                        <color key="titleColor" red="0.55686274509803924" green="0.12156862745098039" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="lookSureCoinDeatileButtonClick:" destination="-1" eventType="touchUpInside" id="9u0-tx-CkC"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owner_SureCoinBackImage" translatesAutoresizingMaskIntoConstraints="NO" id="eLD-xa-g5O">
+                    <rect key="frame" x="0.0" y="284" width="375" height="117"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="eLD-xa-g5O" secondAttribute="height" multiplier="828:258" id="0LI-vw-6Sv"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IrV-E6-BvV">
+                    <rect key="frame" x="112.5" y="342.5" width="150" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="WOJ-oq-rsr"/>
+                        <constraint firstAttribute="height" constant="60" id="y7x-e2-NSa"/>
+                    </constraints>
+                    <connections>
+                        <action selector="goSignInButtonClick:" destination="-1" eventType="touchUpInside" id="YPR-wW-4Mk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IrV-E6-BvV" firstAttribute="centerY" secondItem="eLD-xa-g5O" secondAttribute="centerY" constant="30" id="Ac0-C4-jvC"/>
+                <constraint firstItem="1t5-BG-SQd" firstAttribute="centerX" secondItem="LM2-52-aqb" secondAttribute="centerX" id="Kp5-q2-awi"/>
+                <constraint firstItem="eLD-xa-g5O" firstAttribute="top" secondItem="85i-7V-BFu" secondAttribute="bottom" constant="20" id="NIc-hr-odh"/>
+                <constraint firstItem="1t5-BG-SQd" firstAttribute="centerY" secondItem="LM2-52-aqb" secondAttribute="centerY" id="S4M-rf-YYX"/>
+                <constraint firstItem="LM2-52-aqb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="SAl-RV-82V"/>
+                <constraint firstItem="eLD-xa-g5O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T2u-eS-NSB"/>
+                <constraint firstItem="LM2-52-aqb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XJb-mb-XGl"/>
+                <constraint firstItem="YbD-6m-79J" firstAttribute="top" secondItem="LM2-52-aqb" secondAttribute="bottom" constant="15" id="du6-j7-t4J"/>
+                <constraint firstItem="85i-7V-BFu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iMg-pz-k5W"/>
+                <constraint firstItem="85i-7V-BFu" firstAttribute="top" secondItem="YbD-6m-79J" secondAttribute="bottom" constant="20" id="mSq-qo-dmg"/>
+                <constraint firstItem="IrV-E6-BvV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mg1-NU-VGD"/>
+                <constraint firstItem="YbD-6m-79J" firstAttribute="centerX" secondItem="LM2-52-aqb" secondAttribute="centerX" id="vrH-af-dcu"/>
+                <constraint firstAttribute="trailing" secondItem="eLD-xa-g5O" secondAttribute="trailing" id="xif-kg-W4p"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="owner_SureCoinBack" width="150" height="150"/>
+        <image name="owner_SureCoinBackImage" width="414" height="129"/>
+    </resources>
+</document>
